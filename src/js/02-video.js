@@ -1,17 +1,13 @@
-import throttle from 'lodash.throttle';
+// import throttle from 'lodash.throttle';
 import Player from '@vimeo/player';
 
-const CURRENT_TIME_KEY = 'videoplayer-current-time';
-
-const iframe = document.querySelector('iframe');
-const player = new Player(iframe, {
-  loop: true,
-  fullscreen: true,
-  quality: '1080p',
+const player = new Player('vimeo-player', {
+    id: 19231868,
+    width: 640
 });
 
 player.on('play', function() {
-  console.log('played the video!');
+    console.log('played the video!');
 });
 
 
