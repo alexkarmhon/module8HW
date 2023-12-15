@@ -1,21 +1,30 @@
 {
-  "name": "module8hw",
-  "version": "1.0.0",
+  "name": "parcel-project-template",
+  "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/alexkarmhon/module8HW.git",
-  "main": "index.js",
+  "homepage": "https://alexkarmhon.github.io/module8HW",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /module8HW/"
   },
-  "author": "Olexii <89stigmat89@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkarmhon/module8HW.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexkarmhon/module8HW/issues"
+  },
   "dependencies": {
-    "modern-normalize": "^2.0.0",
-    "node": "^21.2.0"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
-    "parcel": "^2.10.3"
-  }
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
