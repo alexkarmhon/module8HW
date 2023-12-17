@@ -36,6 +36,9 @@ const form = document.querySelector('.feedback-form');
 
 const formData = JSON.parse(localStorage.getItem("data")) ?? {};
 
+form.elements.message.value = formData[form.elements.message.name] ?? "";
+form.elements.email.value = formData[form.elements.email.name] ?? "";
+
 form.addEventListener('submit', onFormSubmit);
 form.addEventListener('input', onInput);
 
